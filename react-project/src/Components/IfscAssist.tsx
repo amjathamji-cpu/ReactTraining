@@ -45,7 +45,7 @@ function IfscAssist({ifscCode}: Props) {
       fetchIfscData();
     }, [ifscCode]);
   
-    if (loading) return <div>Loading...</div>;
+    if (spinner) return <div>spinner...</div>;
     if (error) return <div>Error: {error}</div>;
   
     return (
